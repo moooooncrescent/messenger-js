@@ -1,6 +1,5 @@
 import { history } from "./history";
 import { Switch, Route, Router } from "react-router-dom";
-import './App.css';
 import NotFound from './pages/notfound/index';
 import SignIn from './pages/signin/index';
 import SignUp from './pages/signup/index';
