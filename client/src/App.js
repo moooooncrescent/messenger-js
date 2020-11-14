@@ -4,6 +4,7 @@ import NotFound from './pages/notfound/index';
 import SignIn from './pages/signin/index';
 import SignUp from './pages/signup/index';
 import Messenger from './pages/msg/index';
+import Forgot from "./pages/forgot";
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" exact component={SignIn} />
           <Route path="/signup" exact component={SignUp} />
           <Route path="/msg" exact component={Messenger} />
+          <Route path='/forgot' exact component={Forgot} />
           <Route component={NotFound} />
         </Switch>
       </Router>

@@ -1,4 +1,4 @@
-import React, { useState }  from "react";
+import React, { useState } from "react";
 import "./index.css";
 
 function SignUp() {
@@ -42,7 +42,7 @@ function SignUp() {
           id="submit"
           type="submit"
         >
-          SignUp
+          Sign Up
         </button>
 
         <a

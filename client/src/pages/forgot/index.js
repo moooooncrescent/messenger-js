@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import "./index.css";
 
-function SignIn() {
+function Forgot() {
   const [email, setEmail] = useState("");
   console.log(email);
-  const [password, setPassword] = useState("");
-  console.log(password);
-
   return (
-    <div className="signin-page">
+    <div className="forgot-page">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous"
+        ></link>
+      </head>
       <form className="form-signin">
-        <h1 className="h3 mb-3 font-weight-normal">Login</h1>
+        <h1 className="h3 mb-3 font-weight-normal">Forgot?</h1>
         <input
           type="email"
           className="form-control"
@@ -19,39 +24,30 @@ function SignIn() {
           onChange={(event) => setEmail(event.target.value)}
           value={email}
         ></input>
-        <input
-          type="password"
-          className="form-control"
-          placeholder="Password"
-          required=""
-          onChange={(event) => setPassword(event.target.value)}
-          value={password}
-        ></input>
         <button
           className="btn btn-md btn-primary btn-block mb-3 mt-3"
           id="submit"
           type="submit"
         >
-          Sign In
+          Restore
         </button>
-
         <a
           href="/signup"
-          className="btn btn-link mt-2 mb-1 text-muted text-center"
+          class="btn btn-link mt-2 mb-1 text-muted text-center"
           role="button"
           aria-pressed="true"
         >
           Register
         </a>
         <a
-          href="/forgot"
-          className="btn btn-link mt-2 mb-1 text-muted text-center"
+          href="/"
+          class="btn btn-link mt-2 mb-1 text-muted text-center"
           role="button"
           aria-pressed="true"
         >
-          Forgot password
+          Log In
         </a>
-        <p className="mt-3 mb-3 text-muted">
+        <p class="mt-3 mb-3 text-muted">
           <a
             href="https://t.me/moooooncrescent"
             role="button"
@@ -60,9 +56,9 @@ function SignIn() {
             Vitaly Odinokov{" "}
           </a>{" "}
         </p>
-        <p className="mt-3 mb-3 text-muted"> 2020 </p>
+        <p class="mt-3 mb-3 text-muted"> 2020 </p>
       </form>
     </div>
   );
 }
-export default SignIn;
+export default Forgot;
